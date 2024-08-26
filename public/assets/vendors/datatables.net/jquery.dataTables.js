@@ -1,11 +1,11 @@
-/*! DataTables 1.13.10
- * ©2008-2024 SpryMedia Ltd - datatables.net/license
+/*! DataTables 1.13.7
+ * ©2008-2023 SpryMedia Ltd - datatables.net/license
  */
 
 /**
  * @summary     DataTables
  * @description Paginate, search and order HTML tables
- * @version     1.13.10
+ * @version     1.13.7
  * @author      SpryMedia Ltd
  * @contact     www.datatables.net
  * @copyright   SpryMedia Ltd.
@@ -54,7 +54,7 @@
 			};
 		}
 		else {
-			module.exports = factory( jq, window, window.document );
+			return factory( jq, window, window.document );
 		}
 	}
 	else {
@@ -8583,13 +8583,7 @@
 					row = data[i];
 	
 					if ( row._details ) {
-						row._details.each(function () {
-							var el = $(this).children('td');
-	
-							if (el.length == 1) {
-								el.attr('colspan', visible);
-							}
-						});
+						row._details.children('td[colspan]').attr('colspan', visible );
 					}
 				}
 			} );
@@ -9801,7 +9795,7 @@
 	 *  @type string
 	 *  @default Version number
 	 */
-	DataTable.version = "1.13.10";
+	DataTable.version = "1.13.7";
 	
 	/**
 	 * Private data store, containing all of the settings objects that are

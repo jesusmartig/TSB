@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'themify';
-	src:url('../fonts/themify.eot');
-	src:url('../fonts/themify.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/themify.woff') format('woff'),
-		url('../fonts/themify.ttf') format('truetype'),
-		url('../fonts/themify.svg') format('svg');
+	src:url('https://demo.bootstrapdash.com/star-admin-2-pro/themes/assets/vendors/ti-icons/fonts/themify.eot');
+	src:url('https://demo.bootstrapdash.com/star-admin-2-pro/themes/assets/vendors/ti-icons/fonts/themify.eot?#iefix') format('embedded-opentype'),
+		url('https://demo.bootstrapdash.com/star-admin-2-pro/themes/assets/vendors/ti-icons/fonts/themify.woff') format('woff'),
+		url('https://demo.bootstrapdash.com/star-admin-2-pro/themes/assets/vendors/ti-icons/fonts/themify.ttf') format('truetype'),
+		url('https://demo.bootstrapdash.com/star-admin-2-pro/themes/assets/vendors/ti-icons/fonts/themify.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
