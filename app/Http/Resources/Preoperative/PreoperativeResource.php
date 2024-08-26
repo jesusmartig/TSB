@@ -1,0 +1,121 @@
+<?php
+
+namespace App\Http\Resources\Preoperative;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class PreoperativeResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
+     */
+    public function toArray($request)
+    {
+        return [
+            'type' => 'preoperative',
+            'id' => (string)$this->resource->id,
+            'attributes' => [
+                'registration' => $this->resource->registration,
+                'mileage' => $this->resource->mileage,
+                'trafficlicense' => $this->resource->trafficlicense,
+                'mechanicaltechnicalinspection' => $this->resource->mechanicaltechnicalinspection,
+                'obligatoryinsurance' => $this->resource->obligatoryinsurance,
+                'thirdpartyinsurance' => $this->resource->thirdpartyinsurance,
+                'drivinglicense' => $this->resource->drivinglicense,
+                'routes' => $this->resource->routes,
+                'emergencycontacts' => $this->resource->emergencycontacts,
+                'boots' => $this->resource->boots,
+                'photoluminescentvest' => $this->resource->photoluminescentvest,
+                'gloves' => $this->resource->gloves,
+                'hearingprotection' => $this->resource->hearingprotection,
+                'monoglasses' => $this->resource->monoglasses,
+                'phone' => $this->resource->phone,
+                'hydration' => $this->resource->hydration,
+                'windshield' => $this->resource->windshield,
+                'wiperwasher' => $this->resource->wiperwasher,
+                'sides' => $this->resource->sides,
+                'rearglass' => $this->resource->rearglass,
+                'lrearwindshield' => $this->resource->lrearwindshield,
+                'rearviewmirror' => $this->resource->rearviewmirror,
+                'lateralmirrors' => $this->resource->lateralmirrors,
+                'cushioncondition' => $this->resource->cushioncondition,
+                'conditionofthechairs' => $this->resource->conditionofthechairs,
+                'upholsterycondition' => $this->resource->upholsterycondition,
+                'vehiclecleaning' => $this->resource->vehiclecleaning,
+                'doorhandles' => $this->resource->doorhandles,
+                'doorplates' => $this->resource->doorplates,
+                'doorlocks' => $this->resource->doorlocks,
+                'glasslifter' => $this->resource->glasslifter,
+                'dooradjustment' => $this->resource->dooradjustment,
+                'horn' => $this->resource->horn,
+                'reversealarm' => $this->resource->reversealarm,
+                'instruments' => $this->resource->instruments,
+                'frontsbelts' => $this->resource->frontsbelts,
+                'rearsbelts' => $this->resource->rearsbelts,
+                'electriccontrols' => $this->resource->electriccontrols,
+                'controlpanel' => $this->resource->controlpanel,
+                'airconditioning' => $this->resource->airconditioning,
+                'accidentkit' => $this->resource->accidentkit,
+                'photographiccamera' => $this->resource->photographiccamera,
+                'batterypoweredflashlight' => $this->resource->batterypoweredflashlight,
+                'firstaidkit' => $this->resource->firstaidkit,
+                'low' => $this->resource->low,
+                'full' => $this->resource->full,
+                'directionals' => $this->resource->directionals,
+                'coconuts' => $this->resource->coconuts,
+                'reverse' => $this->resource->reverse,
+                'antifog' => $this->resource->antifog,
+                'cabinlights' => $this->resource->cabinlights,
+                'emergency' => $this->resource->emergency,
+                'thirdstop' => $this->resource->thirdstop,
+                'engineoil' => $this->resource->engineoil,
+                'lastchange' => $this->resource->lastchange,
+                'address' => $this->resource->address,
+                'brakefluid' => $this->resource->brakefluid,
+                'refrigerant' => $this->resource->refrigerant,
+                'windshieldwater' => $this->resource->windshieldwater,
+                'fuellevel' => $this->resource->fuellevel,
+                'lubricantleaks' => $this->resource->lubricantleaks,
+                'waterleaks' => $this->resource->waterleaks,
+                'securitypin' => $this->resource->securitypin,
+                'loaded' => $this->resource->loaded,
+                'current' => $this->resource->current,
+                'reflectivetriangles' => $this->resource->reflectivetriangles,
+                'cat' => $this->resource->cat,
+                'toolbox' => $this->resource->toolbox,
+                'crosspiece' => $this->resource->crosspiece,
+                'tacos' => $this->resource->tacos,
+                'sparetire' => $this->resource->sparetire,
+                'jumpercables' => $this->resource->jumpercables,
+                'handbrake' => $this->resource->handbrake,
+                'fanbelt' => $this->resource->fanbelt,
+                'mooringdevices' => $this->resource->mooringdevices,
+                'straps' => $this->resource->straps,
+                'hooks' => $this->resource->hooks,
+                'trailercoupling' => $this->resource->trailercoupling,
+                'wearfrontright' => $this->resource->wearfrontright,
+                'wearleftfront' => $this->resource->wearleftfront,
+                'wearrightrear' => $this->resource->wearrightrear,
+                'wearleftrear' => $this->resource->wearleftrear,
+                'wearsparetire' => $this->resource->wearsparetire,
+                'pressfrontright' => $this->resource->pressfrontright,
+                'pressleftfront' => $this->resource->pressleftfront,
+                'pressrightrear' => $this->resource->pressrightrear,
+                'pressleftrear' => $this->resource->pressleftrear,
+                'presssparetire' => $this->resource->presssparetire,
+                'observations' => $this->resource->observations,
+                'vehicle' => $this->resource->vehicle,
+                'driver' => $this->resource->driver,
+                'status' => $this->resource->status,
+                'created' => $this->resource->created_at,
+                'updated' => $this->resource->updated_at,
+            ],
+            'links' => [
+                'self' => route('preoperative.show', $this->resource->id),
+            ]
+        ];
+    }
+}
