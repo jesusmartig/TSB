@@ -36,7 +36,6 @@ class TransportCompanyResource extends JsonResource
                 'typeDocuments' => $this->resource->typeDocuments,
                 'document' => $this->resource->document,
                 'names' => $this->resource->names,
-                'usId' => $this->resource->usId,
                 'status' => $this->resource->status,
                 'created' => $this->resource->created_at,
                 'updated' => $this->resource->updated_at,
