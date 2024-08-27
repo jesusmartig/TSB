@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="{{ asset ('assets/vendors/simple-line-icons/css/simple-line-icons.css')}}">
     <link rel="stylesheet" href="{{ asset ('assets/vendors/css/vendor.bundle.base.css')}}">
     <link rel="stylesheet" href="{{ asset ('assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css')}}">
-
-    <link rel="stylesheet" href="{{ asset ('assets/css/style.css')}}">
+    
+    <link rel="stylesheet" href="{{ asset ('/assets/css/vertical-layout-brown/style.css')}}">
+    <link rel="stylesheet" href="{{ asset ('/assets/css/style.css')}}">
     <!-- endinject -->
     <link rel="stylesheet" href="{{ asset ('assets/vendors/jquery-toast-plugin/jquery.toast.min.css')}}">
 
@@ -39,6 +40,7 @@
 <script src="{{asset('assets/vendors/jquery-validation/dist/jquery.validate.min.js')}}"></script>
 <script src="{{asset('assets/vendors/jquery-validation/dist/additional-methods.min.js')}}"></script>
 <script src="{{asset('assets/vendors/jquery-toast-plugin/jquery.toast.min.js')}}"></script>
+
 
 @yield('scripts')
 

@@ -30793,6 +30793,9 @@ div.tagsinput span.tag a {
 }
 .auth .brand-logo img {
   width: 90px;
+  position: relative;
+  left: 40%;
+  
 }
 .auth form .form-group {
   margin-bottom: 1.5rem;
