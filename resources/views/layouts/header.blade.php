@@ -128,10 +128,11 @@
                 </div>
             </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+        <button id="menu-tog'" class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                 data-bs-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
         </button>
     </div>
 </nav>
+
 

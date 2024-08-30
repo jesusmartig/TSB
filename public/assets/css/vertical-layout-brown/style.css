@@ -30977,9 +30977,11 @@ div.tagsinput span.tag a {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.sidebar .nav .nav-item.active > .nav-link {
-  background: #FAEEDB;
-  position: relative;
+
+/*SIDER COLOR CONTINUO*/
+
+.red-color {
+  color: red;
 }
 .sidebar .nav .nav-item.active > .nav-link i,
 .sidebar .nav .nav-item.active > .nav-link .menu-title,
@@ -31009,7 +31011,7 @@ div.tagsinput span.tag a {
   border-radius: 0.437rem 0.437rem 0 0;
 }
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
-  background: #FAEEDB;
+  background: #9A0F21;
   color: #1E1E2C;
 }
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link:not([aria-expanded=true]) {

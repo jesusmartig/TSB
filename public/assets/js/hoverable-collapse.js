@@ -14,9 +14,11 @@
         } else {
           var $menuItem = $(this);
           if (ev.type === 'mouseenter') {
-            $menuItem.addClass('hover-open')
+            
+            $menuItem.addClass('hover-open red-color')
           } else {
-            $menuItem.removeClass('hover-open')
+            $('.sidebar .nav-item').removeClass('red-color');
+            $menuItem.removeClass('hover-open red-color')
           }
         }
       }

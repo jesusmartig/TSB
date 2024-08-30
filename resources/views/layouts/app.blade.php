@@ -56,6 +56,7 @@
 <!-- End plugin js for this page -->
 <!-- inject:js -->
 <script src="{{ asset ('assets/js/off-canvas.js')}}"></script>
+<!-- menu lateral-->
 <script src="{{ asset ('assets/js/hoverable-collapse.js')}}"></script>
 <script src="{{ asset ('assets/js/template.js')}}"></script>
 <script src="{{ asset ('assets/js/settings.js')}}"></script>
