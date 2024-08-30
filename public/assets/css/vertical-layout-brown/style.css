@@ -30980,13 +30980,13 @@ div.tagsinput span.tag a {
 
 /*SIDER COLOR CONTINUO*/
 
-.red-color {
-  color: red;
+.sidebar .nav .nav-item.active > .nav-link {
+  color: #000000;
 }
 .sidebar .nav .nav-item.active > .nav-link i,
 .sidebar .nav .nav-item.active > .nav-link .menu-title,
 .sidebar .nav .nav-item.active > .nav-link .menu-arrow {
-  color: #1E1E2C;
+  color: #000000;
 }
 .sidebar .nav:not(.sub-menu) {
   margin-top: 1.45rem;
@@ -31010,8 +31010,9 @@ div.tagsinput span.tag a {
   background: #FAEEDB;
   border-radius: 0.437rem 0.437rem 0 0;
 }
+/*HOVER MENU LATERAL*/
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
-  background: #9A0F21;
+  background: #bdb2b4;
   color: #1E1E2C;
 }
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link:not([aria-expanded=true]) {
