@@ -11,7 +11,7 @@
                     <div>
                         <div class="btn-wrapper">
                             <a href="/dashboard/vehiculos/crear" class="btn btn-primary text-white me-0"><i
-                                    class="icon-download"></i> Crear cliente</a>
+                                    class="icon-download"></i> Crear Vehiculos</a>
                         </div>
                     </div>
                 </div>

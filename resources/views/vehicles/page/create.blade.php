@@ -4,35 +4,23 @@
 @endsection
 @section('content')
     <div class="row">
-        <div class="col-12">
-            <div class="page-title-box">
-                <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Vehículos</a></li>
-                        <li class="breadcrumb-item active">@yield('title')</li>
-                    </ol>
-                </div>
-                <h4 class="page-title">@yield('title')</h4>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-12">
-            <div class="row mb-2">
-                <div class="col-xl-12">
-                    <div class="text-xl-end mt-xl-0 mt-1">
-                        <a role="button" href="/dashboard/vehiculos"
-                           class="btn btn-sm btn btn-info rounded-pill">
-                            <i class="fas fa-undo-alt me-1"></i>Regresar
-                        </a>
+        <div class="col-sm-12">
+            <div class="home-tab">
+                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
+                    <ul class="nav nav-tabs" role="tablist"></ul>
+                    <div>
+                        <div class="btn-wrapper">
+                            <a href="/dashboard/vehiculos" class="btn btn-primary text-white me-0">
+                                <i class="fas fa-undo-alt me-1"></i>Regresar
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <form class="AddForm" id="AddForm" name="AddForm">
                 @csrf
                 <div id="basicwizard">
+                 <div class="card mb-2">
+                  <div class="card-body">
 
                     <ul class="nav nav-pills nav-justified form-wizard-header mb-4">
                         <li class="nav-item">
@@ -101,7 +89,7 @@
                                             <li class="next list-inline-item float-end">
                                                 <button type="button" onclick="validar('basictab0')"
                                                         class="btn btn-info validation">
-                                                    Siguiente <i class="mdi mdi-arrow-right ms-1"></i>
+                                                    Siguiente <i class="far fa-chevron-right ms-1"></i>
                                                 </button>
                                             </li>
                                         </ul>
@@ -153,14 +141,14 @@
 
                                         <ul class="pager wizard mb-0 list-inline">
                                             <li class="previous list-inline-item">
-                                                <button type="button" class="btn btn-light"><i
-                                                        class="mdi mdi-arrow-left me-1"></i> Atrás
+                                                <button type="button" class="btn btn-light"> 
+                                                    <i class="far fa-chevron-left me-1"></i>Atrás
                                                 </button>
                                             </li>
                                             <li class="next list-inline-item float-end">
                                                 <button type="button" onclick="validar('basictab1')"
-                                                        class="btn btn-info validation">Siguiente <i
-                                                        class="mdi mdi-arrow-right ms-1"></i></button>
+                                                        class="btn btn-info validation">Siguiente 
+                                                        <i class="far fa-chevron-right"></i></button>
                                             </li>
                                         </ul>
                                     </div>
@@ -277,14 +265,14 @@
 
                                         <ul class="pager wizard mb-0 list-inline">
                                             <li class="previous list-inline-item">
-                                                <button type="button" class="btn btn-light"><i
-                                                        class="mdi mdi-arrow-left me-1"></i> Atrás
+                                                <button type="button" class="btn btn-light">
+                                                    <i class="far fa-chevron-left me-1"></i>Atrás
                                                 </button>
                                             </li>
                                             <li class="next list-inline-item float-end">
                                                 <button type="button" onclick="validar('basictab2')"
-                                                        class="btn btn-info">Siguiente <i
-                                                        class="mdi mdi-arrow-right ms-1"></i></button>
+                                                        class="btn btn-info">Siguiente
+                                                        <i class="far fa-chevron-right ms-1"></i></button>
                                             </li>
                                         </ul>
                                     </div>
@@ -389,7 +377,7 @@
                                             </div>
                                             <div class="row pb-3">
                                                 <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                                    <label for=coExpeditiondate">Fecha de expedición </label>
+                                                    <label for="coExpeditiondate">Fecha de expedición </label>
                                                     <input type="date" class="form-control coExpeditiondate"
                                                            name="coExpeditiondate"
                                                            id="coExpeditiondate" value="" autocomplete="off">
@@ -412,7 +400,7 @@
                                             </div>
                                             <div class="row pb-3">
                                                 <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">
-                                                    <label for=colegallyrepresentative">Representante
+                                                    <label for="colegallyrepresentative">Representante
                                                         legalmente</label>
                                                     <input type="text"
                                                            class="form-control colegallyrepresentative"
@@ -454,7 +442,7 @@
                                                        id="vmResponsibleIdentificationNo" value="" autocomplete="off">
                                             </div>
                                             <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                                                <label for=vmResponsiblename">Nombre del
+                                                <label for="vmResponsiblename">Nombre del
                                                     responsable</label>
                                                 <input type="text" class="form-control vmResponsiblename"
                                                        name="vmResponsiblename"
@@ -469,14 +457,15 @@
                                     <div class="row">
                                         <ul class="pager wizard mb-0 list-inline">
                                             <li class="previous list-inline-item">
-                                                <button type="button" class="btn btn-light"><i
-                                                        class="mdi mdi-arrow-left me-1"></i> Atrás
+                                                <button type="button" class="btn btn-light"></i> 
+                                                    <i class="far fa-chevron-left me-1"></i>Atrás
                                                 </button>
                                             </li>
                                             <li class="next list-inline-item float-end">
                                                 <button type="button" onclick="validar('basictab3')"
-                                                        class="btn btn-info">Siguiente <i
-                                                        class="mdi mdi-arrow-right ms-1"></i></button>
+                                                        class="btn btn-info">Siguiente
+                                                        <i class="far fa-chevron-right ms-1"></i>
+                                                        </button>
                                             </li>
                                         </ul>
                                     </div>
@@ -552,8 +541,8 @@
                                     <div class="row">
                                         <ul class="pager wizard mb-0 list-inline mt-1">
                                             <li class="previous list-inline-item">
-                                                <button type="button" class="btn btn-light"><i
-                                                        class="mdi mdi-arrow-left me-1"></i> Atrás
+                                                <button type="button" class="btn btn-light">
+                                                    <i class="far fa-chevron-left me-1"></i> Atrás
                                                 </button>
                                             </li>
                                             <li class="next list-inline-item float-end">
@@ -576,6 +565,8 @@
 
                         </div>
                     </div>
+                   </div>
+                  </div>
                 </div>
             </form>
 
