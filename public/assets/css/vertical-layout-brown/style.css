@@ -9368,6 +9368,9 @@ progress {
 }
 
 @media (min-width: 576px) {
+  h4{
+    width: 700%;
+  }
   .col-sm {
     flex: 1 0 0%;
   }
@@ -9405,27 +9408,28 @@ progress {
   }
   .col-sm-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 13.33333333%;
   }
   .col-sm-2 {
     flex: 0 0 auto;
-    width: 16.66666667%;
+    width: 39.33333333%;
+    
   }
   .col-sm-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 60%;
   }
   .col-sm-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+  
   }
   .col-sm-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 60%;
   }
   .col-sm-6 {
     flex: 0 0 auto;
-    width: 50%;
+    
   }
   .col-sm-7 {
     flex: 0 0 auto;
@@ -9590,15 +9594,15 @@ progress {
   }
   .col-md-5 {
     flex: 0 0 auto;
-    width: 41.66666667%;
+    width: 40%;
   }
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 60%;
   }
   .col-md-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 70;
   }
   .col-md-8 {
     flex: 0 0 auto;
@@ -9743,7 +9747,7 @@ progress {
   }
   .col-lg-1 {
     flex: 0 0 auto;
-    width: 8.33333333%;
+    width: 60%;
   }
   .col-lg-2 {
     flex: 0 0 auto;
@@ -9755,7 +9759,7 @@ progress {
   }
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 40%;
   }
   .col-lg-5 {
     flex: 0 0 auto;
@@ -9763,7 +9767,7 @@ progress {
   }
   .col-lg-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 80%;
   }
   .col-lg-7 {
     flex: 0 0 auto;
@@ -9940,7 +9944,7 @@ progress {
   }
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 100%;
   }
   .col-xl-9 {
     flex: 0 0 auto;

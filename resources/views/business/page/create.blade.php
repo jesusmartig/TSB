@@ -15,151 +15,491 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content tab-content-basic">
-                    <form class="form-sample" id="AddForm" name="AddForm">
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                @csrf
-                                <div class="row pb-3">
-                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                        <label class="col-form-label" for="nit">NIT</label>
-                                        <input type="text" class="form-control nit" name="nit" id="nit" value=""
-                                               autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                                        <label class="col-form-label" for="digit">Digito</label>
-                                        <input type="text" class="form-control digit" name="digit" id="digit" value=""
-                                               autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <label class="col-form-label" for="businessName">Nombre / Razón social</label>
-                                        <input type="text" class="form-control businessName" name="businessName"
-                                               id="businessName" value="" autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                        <label class="col-form-label" for="typePerson">Tipo de persona</label>
-                                        <select class="form-select typePerson" name="typePerson" id="typePerson">
-                                            <option value="">Seleccione....</option>
-                                            <option value="NACIONAL - NATURAL">NACIONAL - NATURAL</option>
-                                            <option value="NACIONAL - JURÍDICA">NACIONAL - JURÍDICA
-                                            </option>
-                                            <option value="EXTRANJERA">EXTRANJERA</option>
-                                        </select>
-                                    </div>
+                <div class="row">
+                    <div class="col-12 grid-margin">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">Empresa</h4>
+                          <form id="example-vertical-wizard" action="#">
+                            <div>
+                              <h3>Informacion Empresa</h3>
+                              <section>
+                                <div class="tab-content tab-content-basic">
+                                    <form class="form-sample" id="AddForm" name="AddForm">
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                @csrf
+                                                <div class="row pb-2">
+                                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-3">
+                                                        <label class="col-form-label" for="nit">NIT</label>
+                                                        <input type="text" class="form-control nit" name="nit" id="nit" value=""
+                                                               autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-1 col-md-2 col-lg-2 col-xl-2">
+                                                        <label class="col-form-label" for="digit">Digito</label>
+                                                        <input type="text" class="form-control digit" name="digit" id="digit" value=""
+                                                               autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-6">
+                                                        <label class="col-form-label" for="businessName">Nombre / Razón social</label>
+                                                        <input type="text" class="form-control businessName" name="businessName"
+                                                               id="businessName" value="" autocomplete="off" required>
+                                                    </div>
+                                                  </div>
+                                                  <div class="row pb-2">
+                                                    <div class="col-12 col-sm-3 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="typePerson">Tipo de persona</label>
+                                                        <select class="form-select typePerson" name="typePerson" id="typePerson">
+                                                            <option value="">Seleccione....</option>
+                                                            <option value="NACIONAL - NATURAL">NACIONAL - NATURAL</option>
+                                                            <option value="NACIONAL - JURÍDICA">NACIONAL - JURÍDICA
+                                                            </option>
+                                                            <option value="EXTRANJERA">EXTRANJERA</option>
+                                                        </select>
+                                                    </div>
+                                                
+                                                    <div class="col-12 col-sm-1 col-md-3 col-lg-2 col-xl-2">
+                                                        <label class="col-form-label" for="acronym">Sigla</label>
+                                                        <input type="text" class="form-control acronym" name="acronym" id="acronym"
+                                                               value="" autocomplete="off">
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                        <label class="col-form-label" for="nationalPersontype">Tipo persona Nacional -
+                                                            Jurídica</label>
+                                                        <select class="form-select nationalPersontype" name="nationalPersontype"
+                                                                id="nationalPersontype">
+                                                            <option value="">Seleccione....</option>
+                                                            <option value="PÚBLICA">PÚBLICA</option>
+                                                            <option value="PRIVADA">PRIVADA</option>
+                                                            <option value="MIXTA">MIXTA</option>
+                                                            <option value="INVERSIÓN EXTRANJERA">INVERSIÓN EXTRANJERA</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-5">
+                                                        <label class="col-form-label" for="typesSociety">Tipo de sociedad </label>
+                                                        <select class="form-select typesSociety" name="typesSociety" id="typesSociety">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                
+                                                    <div class="col-12 col-sm-3 col-md-5 col-lg-4 col-xl-3">
+                                                        <label class="col-form-label" for="economicSector">Estrato social</label>
+                                                        <input type="text" class="form-control economicSector" name="economicSector"
+                                                               id="economicSector" value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="department">Departamento </label>
+                                                        <select class="form-select department" name="department" id="department">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="city">Ciudad</label>
+                                                        <select class="form-select city" name="city" id="city">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-3 col-md-5 col-lg-4 col-xl-3">
+                                                        <label class="col-form-label" for="codeFuec">Codigo Fuec</label>
+                                                        <input type="text" class="form-control codeFuec" name="codeFuec"
+                                                               id="tcCodeFuec" value="" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-3">
+                                                        <label class="col-form-label" for="telephone">Teléfono</label>
+                                                        <input type="text" class="form-control telephone" name="telephone"
+                                                               id="tcTelephone" value="" autocomplete="off" required>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="direction">Dirección</label>
+                                                        <input type="text" class="form-control direction" name="direction"
+                                                               id="tcDirection" value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                                        <label class="col-form-label" for="email">Correo electrónico</label>
+                                                        <input type="text" class="form-control email" name="email" id="email"
+                                                               value="" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                              <h4>Datos del representante legal</h4>
+                                                <div class="row pb-3">
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="typeDocuments">Tipo de documento</label>
+                                                        <select class="form-select typeDocuments" name="typeDocuments"
+                                                                id="typeDocuments">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-5">
+                                                        <label class="col-form-label" for="document">No de documento</label>
+                                                        <input type="text" class="form-control document" name="document" id="document"
+                                                               value=""
+                                                               autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-7 col-lg-6 col-xl-6">
+                                                        <label class="col-form-label" for="names">Nombre del representarle
+                                                            legal</label>
+                                                        <input type="text" class="form-control names" name="names"
+                                                               id="names" value="" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                <div class="text-xl-end mt-xl-0 mt-1">
+                                                    <div class="ms-auto">
+                                                        <a role="button"
+                                                           class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
+                                                           href="/dashboard/empresa">
+                                                            <i class="fad fa-times me-1"> </i> Cancelar
+                                                        </a>
+                                                        <button type="submit"
+                                                                class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
+                                                            <i class="fad fa-check me-1"></i> Guardar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="row pb-3">
-                                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                                        <label class="col-form-label" for="acronym">Sigla</label>
-                                        <input type="text" class="form-control acronym" name="acronym" id="acronym"
-                                               value="" autocomplete="off">
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <label class="col-form-label" for="nationalPersontype">Tipo persona Nacional -
-                                            Jurídica</label>
-                                        <select class="form-select nationalPersontype" name="nationalPersontype"
-                                                id="nationalPersontype">
-                                            <option value="">Seleccione....</option>
-                                            <option value="PÚBLICA">PÚBLICA</option>
-                                            <option value="PRIVADA">PRIVADA</option>
-                                            <option value="MIXTA">MIXTA</option>
-                                            <option value="INVERSIÓN EXTRANJERA">INVERSIÓN EXTRANJERA</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                                        <label class="col-form-label" for="typesSociety">Tipo de sociedad </label>
-                                        <select class="form-select typesSociety" name="typesSociety" id="typesSociety">
-                                            <option value="">Seleccione....</option>
-                                        </select>
-                                    </div>
+                              </section>
+                              <h3>Sedes</h3>
+                              <section>
+                                <div class="tab-content tab-content-basic">
+                                    <form class="form-sample" id="AddForm" name="AddForm">
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                @csrf
+                                                <div class="row pb-2">
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-8">
+                                                        <label class="col-form-label" for="sedeName">Nombre sede</label>
+                                                        <input type="text" class="form-control sedeName" name="sedeName"
+                                                               id="sedeName" value="" autocomplete="off" required>
+                                                    </div>
+                                                  </div>
+
+                                                <div class="row pb-3">
+
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="department">Departamento </label>
+                                                        <select class="form-select department" name="department" id="department">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="city">Ciudad</label>
+                                                        <select class="form-select city" name="city" id="city">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-3 col-md-5 col-lg-4 col-xl-3">
+                                                        <label class="col-form-label" for="direction">Dirección</label>
+                                                        <input type="text" class="form-control direction" name="direction"
+                                                               id="tcdirection" value="" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="telephone">Teléfono</label>
+                                                        <input type="text" class="form-control telephone" name="telephone"
+                                                               id="tcTelephone" value="" autocomplete="off" required>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="phone">Celular</label>
+                                                        <input type="text" class="form-control phone" name="phone"
+                                                               id="tcphone" value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                        <label class="col-form-label" for="email">Correo electrónico</label>
+                                                        <input type="text" class="form-control email" name="email" id="email"
+                                                               value="" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                  <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-8">
+                                                      <label class="col-form-label" for="observation">Observacion</label>
+                                                      <textarea  class="form-control observation" name="observation"
+                                                             id="tcobservation" rows="4" cols="50" value="" autocomplete="off" required></textarea>
+                                                  </div>
+                                                  
+
+                                                  <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                    <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
+                                                    <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                        <option value="">Seleccione....</option>
+                                                    </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="text-xl-end mt-xl-0 mt-1">
+                                                    <div class="ms-auto">
+                                                        <a role="button"
+                                                           class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
+                                                           href="/dashboard/empresa">
+                                                            <i class="fad fa-times me-1"> </i> Cancelar
+                                                        </a>
+                                                        <button type="submit"
+                                                                class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
+                                                            <i class="fad fa-check me-1"></i> Guardar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="row pb-3">
-                                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-2">
-                                        <label class="col-form-label" for="economicSector">Sector económico</label>
-                                        <input type="text" class="form-control economicSector" name="economicSector"
-                                               id="economicSector" value="" autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <label class="col-form-label" for="department">Departamento </label>
-                                        <select class="form-select department" name="department" id="department">
-                                            <option value="">Seleccione....</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <label class="col-form-label" for="city">Ciudad</label>
-                                        <select class="form-select city" name="city" id="city">
-                                            <option value="">Seleccione....</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                        <label class="col-form-label" for="codeFuec">Codigo Fuec</label>
-                                        <input type="text" class="form-control codeFuec" name="codeFuec"
-                                               id="tcCodeFuec" value="" autocomplete="off" required>
-                                    </div>
+                              </section>
+                              <h3>Actividad Economicas</h3>
+                              <section>
+                                  <div class="tab-content tab-content-basic">
+                                      <form class="form-sample" id="AddForm" name="AddForm">
+                                          <div class="card mb-2">
+                                              <div class="card-body">
+                                                  @csrf
+                                                  <div class="row pb-3">
+                                                      <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-8">
+                                                          <label class="col-form-label" for="economicactivity">Actividad Economica </label>
+                                                          <select class="form-select economicactivity" name="economicactivity" id="economicactivity">
+                                                              <option value="">Seleccione....</option>
+                                                          </select>
+                                                      </div>
+                                                      <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-8">
+                                                        <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
+                                                        <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                          <div class="card">
+                                              <div class="card-body">
+                                                
+                                                  <div class="text-xl-end mt-xl-0 mt-1">
+                                                      <div class="ms-auto">
+                                                          <a role="button"
+                                                             class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
+                                                             href="/dashboard/empresa">
+                                                              <i class="fad fa-times me-1"> </i> Cancelar
+                                                          </a>
+                                                          <button type="submit"
+                                                                  class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
+                                                              <i class="fad fa-check me-1"></i> Guardar
+                                                          </button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </section>
+                              <h3>Informacion Bancaria</h3>
+                              <section>
+                                <div class="tab-content tab-content-basic">
+                                    <form class="form-sample" id="AddForm" name="AddForm">
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                @csrf
+                                                <div class="row pb-3">
+
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="bank">Banco </label>
+                                                        <select class="form-select bank" name="bank" id="bank">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="branch">Sucursal</label>
+                                                        <select class="form-select branch" name="branch" id="branch">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                      <label class="col-form-label" for="city">Tipo de cuenta</label>
+                                                      <select class="form-select city" name="city" id="city">
+                                                          <option value="">Seleccione....</option>
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                    <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="telephone">Teléfono</label>
+                                                        <input type="text" class="form-control telephone" name="telephone"
+                                                               id="tcTelephone" value="" autocomplete="off" required>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="phone">Titular de cuenta</label>
+                                                        <input type="text" class="form-control phone" name="phone"
+                                                               id="tcphone" value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                        <label class="col-form-label" for="email">Numero</label>
+                                                        <input type="text" class="form-control email" name="email" id="email"
+                                                               value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                      <label class="col-form-label" for="email">Fecha de certificado bancario</label>
+                                                      <input type="date" class="form-control email" name="email" id="email"
+                                                             value="" autocomplete="off" required>
+                                                  </div>
+                                                </div>
+                                                <div class="row pb-3">
+                                                  <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                    <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
+                                                    <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                        <option value="">Seleccione....</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-8">
+                                                  <label class="col-form-label" for="observation">Observacion</label>
+                                                  <input type="file"  class="form-control observation" name="observation"
+                                                         id="tcobservation" rows="4" cols="50" value="" autocomplete="off" required>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="text-xl-end mt-xl-0 mt-1">
+                                                    <div class="ms-auto">
+                                                        <a role="button"
+                                                           class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
+                                                           href="/dashboard/empresa">
+                                                            <i class="fad fa-times me-1"> </i> Cancelar
+                                                        </a>
+                                                        <button type="submit"
+                                                                class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
+                                                            <i class="fad fa-check me-1"></i> Guardar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="row pb-3">
-                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                        <label class="col-form-label" for="telephone">Teléfono</label>
-                                        <input type="text" class="form-control telephone" name="telephone"
-                                               id="tcTelephone" value="" autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                        <label class="col-form-label" for="phone">Celular</label>
-                                        <input type="text" class="form-control phone" name="phone" id="phone"
-                                               value="" autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <label class="col-form-label" for="direction">Dirección</label>
-                                        <input type="text" class="form-control direction" name="direction"
-                                               id="tcDirection" value="" autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <label class="col-form-label" for="email">Correo electrónico</label>
-                                        <input type="text" class="form-control email" name="email" id="email"
-                                               value="" autocomplete="off" required>
-                                    </div>
+                              </section>
+                              <h3>Camara de Comercio</h3>
+                              <section>
+                               
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox">
+                                    I agree with the Terms and Conditions.
+                                  </label>
                                 </div>
+                              </section>
+                              <h3>Experiencias</h3>
+                              <section>
+                                <div class="tab-content tab-content-basic">
+                                    <form class="form-sample" id="AddForm" name="AddForm">
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                @csrf
+                                                <div class="row pb-2">
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-8">
+                                                        <label class="col-form-label" for="sedeName">Cliente / Razon social</label>
+                                                        <input type="text" class="form-control sedeName" name="sedeName"
+                                                               id="sedeName" value="" autocomplete="off" required>
+                                                    </div>
+                                                  </div>
+
+                                                <div class="row pb-3">
+
+                                                  <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                    <label class="col-form-label" for="sedeName">Valor</label>
+                                                    <input type="text" class="form-control sedeName" name="sedeName"
+                                                           id="sedeName" value="" autocomplete="off" required>
+                                                  </div>
+
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="department">Modena </label>
+                                                        <select class="form-select department" name="department" id="department">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                        <label class="col-form-label" for="city">Fecha de inicio</label>
+                                                        <input type="date" class="form-control sedeName" name="sedeName"
+                                                        id="sedeName" value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-4">
+                                                      <label class="col-form-label" for="city">Fecha de finalizacion</label>
+                                                      <input type="date" class="form-control sedeName" name="sedeName"
+                                                      id="sedeName" value="" autocomplete="off" required>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row pb-3">
+                                                  <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-8">
+                                                      <label class="col-form-label" for="observation">Observacion</label>
+                                                      <textarea  class="form-control observation" name="observation"
+                                                             id="tcobservation" rows="4" cols="50" value="" autocomplete="off" required></textarea>
+                                                  </div>
+                                                  
+
+                                                  <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
+                                                    <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
+                                                    <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                        <option value="">Seleccione....</option>
+                                                    </select>
+                                                  </div>
+                                                  <div class="col-12 col-sm-4 col-md-5 col-lg-1 col-xl-8">
+                                                    <label class="col-form-label" for="observation">Certificado</label>
+                                                    <input type="file"  class="form-control observation" name="observation"
+                                                           id="tcobservation" rows="4" cols="50" value="" autocomplete="off" required>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="text-xl-end mt-xl-0 mt-1">
+                                                    <div class="ms-auto">
+                                                        <a role="button"
+                                                           class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
+                                                           href="/dashboard/empresa">
+                                                            <i class="fad fa-times me-1"> </i> Cancelar
+                                                        </a>
+                                                        <button type="submit"
+                                                                class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
+                                                            <i class="fad fa-check me-1"></i> Guardar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </section>
+                              <h3>Capacidad Transportadora</h3>
+                              <section>
+                               
+                                <div class="form-check">
+                                  <label class="form-check-label">
+                                    <input class="checkbox" type="checkbox">
+                                    I agree with the Terms and Conditions.
+                                  </label>
+                                </div>
+                              </section>
                             </div>
+                          </form>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row pb-3">
-                                    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                        <label class="col-form-label" for="typeDocuments">Tipo de documento</label>
-                                        <select class="form-select typeDocuments" name="typeDocuments"
-                                                id="typeDocuments">
-                                            <option value="">Seleccione....</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                        <label class="col-form-label" for="document">No de documento</label>
-                                        <input type="text" class="form-control document" name="document" id="document"
-                                               value=""
-                                               autocomplete="off" required>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <label class="col-form-label" for="names">Nombre del representarle
-                                            legal</label>
-                                        <input type="text" class="form-control names" name="names"
-                                               id="names" value="" autocomplete="off" required>
-                                    </div>
-                                </div>
-                                <div class="text-xl-end mt-xl-0 mt-1">
-                                    <div class="ms-auto">
-                                        <a role="button"
-                                           class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
-                                           href="/dashboard/empresa">
-                                            <i class="fad fa-times me-1"> </i> Cancelar
-                                        </a>
-                                        <button type="submit"
-                                                class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
-                                            <i class="fad fa-check me-1"></i> Guardar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                      </div>
+                    </div>
+                  </div>
+                
             </div>
         </div>
     </div>

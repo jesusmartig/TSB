@@ -3,6 +3,7 @@
     Empresas de transporte
 @endsection
 @section('content')
+@include('business.page.app')
     <div class="row">
         <div class="col-sm-12">
             <div class="home-tab">

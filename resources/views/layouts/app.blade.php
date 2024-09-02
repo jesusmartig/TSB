@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset ('/assets/vendors/feather/feather.css')}}">
-    <link rel="stylesheet" href="{{ asset('assets/vendors/FontAwesome-pro/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{ asset ('/assets/vendors/mdi/css/materialdesignicons.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('/assets/vendors/FontAwesome-pro/css/all.min.css')}}">
+    
     <link rel="stylesheet" href="{{ asset ('/assets/vendors/css/vendor.bundle.base.css')}}">
     <link rel="stylesheet" href="{{ asset ('/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css')}}">
 
@@ -69,6 +71,13 @@
 <script src="{{asset('assets/vendors/jquery-validation/dist/additional-methods.min.js')}}"></script>
 <!-- Custom js for this page-->
 <!-- End custom js for this page-->
+
+<!-- endinject -->
+<script src="{{asset('assets/vendors/jquery-steps/jquery.steps.min.js')}}"></script>
+<script src="{{asset('assets/vendors/jquery-validation/jquery.validate.min.js')}}"></script>
+
+<!-- Custom js for this page-->
+<script src="{{asset('assets/js/wizard.js')}}"></script>
 @yield('scripts')
 </body>
 </html>
