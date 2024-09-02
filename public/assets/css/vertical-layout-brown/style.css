@@ -9940,11 +9940,11 @@ progress {
   }
   .col-xl-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 39.9%;
   }
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 100%;
+    width: 57.777%;
   }
   .col-xl-9 {
     flex: 0 0 auto;
@@ -30600,10 +30600,11 @@ div.tagsinput span.tag a {
 }
 .wizard > .content > .body {
   float: left;
-  position: absolute;
+  /* position: absolute;
   width: 95%;
-  height: 95%;
+  height: 95%;*/
   padding: 2.5%;
+  overflow: hidden;
 }
 .wizard > .content > .body ul {
   list-style: disc;

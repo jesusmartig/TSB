@@ -20,7 +20,7 @@
                       <div class="card">
                         <div class="card-body">
                           <h4 class="card-title">Empresa</h4>
-                          <form id="example-vertical-wizard" action="#">
+                          <form id="example-form" action="#">
                             <div>
                               <h3>Informacion Empresa</h3>
                               <section>
@@ -40,7 +40,7 @@
                                                         <input type="text" class="form-control digit" name="digit" id="digit" value=""
                                                                autocomplete="off" required>
                                                     </div>
-                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-6">
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-8">
                                                         <label class="col-form-label" for="businessName">Nombre / Razón social</label>
                                                         <input type="text" class="form-control businessName" name="businessName"
                                                                id="businessName" value="" autocomplete="off" required>
@@ -119,7 +119,7 @@
                                                         <input type="text" class="form-control direction" name="direction"
                                                                id="tcDirection" value="" autocomplete="off" required>
                                                     </div>
-                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-4">
+                                                    <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-7">
                                                         <label class="col-form-label" for="email">Correo electrónico</label>
                                                         <input type="text" class="form-control email" name="email" id="email"
                                                                value="" autocomplete="off" required>
