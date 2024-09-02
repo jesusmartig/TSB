@@ -58,3 +58,18 @@ Route::get('/dashboard/clientes/actualizar/{id}', function () {
 Route::get('/404', function () {
     return view('errors.404');
 })->name('errors-404');
+/* Rutas para Vehiculos */
+
+
+Route::get('/dashboard/vehiculos', function () {
+    return view('vehicles.page.index');
+})->name('vehicles.index');
+Route::get('/dashboard/vehiculos/crear', function () {
+    return view('vehicles.page.create');
+})->name('vehicles.create');
+Route::get('/dashboard/vehiculos/actualizar/{id}', function () {
+    return view('vehicles.page.update');
+})->name('vehicles.update');
+Route::get('/dashboard/vehiculos/perfil/{id}', function () {
+    return view('vehicles.page.profile');
+})->name('vehicles.profile');

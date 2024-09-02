@@ -21,5 +21,12 @@
                 <span class="menu-title">Clientes</span>
             </a>
         </li>
+        <li class="nav-item nav-category">Vehiculos</li>
+        <li class="nav-item">
+            <a class="nav-link" href="/dashboard/vehiculos">
+                <i class="fas fa-truck menu-icon"></i>
+                <span class="menu-title">Vehiculos</span>
+            </a>
+        </li>
     </ul>
 </nav>

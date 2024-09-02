@@ -100,41 +100,45 @@
                                                 <option value="F">FEMENINO</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-5">
                                             <label for="email">E-mail </label>
                                             <input type="text" class="form-control email" name="email" id="email"
                                                    autocomplete="off"
                                                    value="" required>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-3">
+                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-5">
                                             <label for="telephone">Teléfono</label>
                                             <input type="text" class="form-control telephone" name="telephone"
                                                    id="telephone"
                                                    autocomplete="off"
                                                    value="">
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-3">
+                                        
+                                    </div>
+                                    <div class="row pb-3">
+                                        
+                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-6">
                                             <label for="cellphone">Celular</label>
                                             <input type="text" class="form-control cellphone" name="cellphone"
                                                    id="cellphone"
                                                    autocomplete="off"
                                                    value="" required>
                                         </div>
-                                        <div class="col-12 col-sm-9 col-md-6 col-lg-1 col-xl-4">
-                                            <label class="col-form-label" for="typePerson">Tipo de remgimen IVA</label>
-                                            <select class="form-select typePerson" name="typePerson" id="typePerson">
+                                        <div class="col-12 col-sm-9 col-md-6 col-lg-1 col-xl-6">
+                                            <label class="col-form-label" for="typeIVA">Tipo de regimen IVA</label>
+                                            <select class="form-select typeIVA" name="typeIVA" id="tctypeIVA">
                                                 <option value="">Seleccione....</option>
                                                 <option value="No_IVA">No Resposable de IVA</option>
                                                 <option value="IVA">Resposable de IVA </option>
                                             </select>
                                         </div>
                                         <div >
-                                            <legend> Retiene ICA</legend>
+                                            <h4> Retiene ICA</h4>
                                             <input type="radio" class="ICA" name="ICA"
-                                                   id="tcICA" value="" required>
+                                                   id="tcICA_si" value="" required>
                                             <label for="ICA_si">SI</label>
                                             <input type="radio" class="ICA" name="ICA"
-                                                   id="tcICA" value="" required>
+                                                   id="tcICA_no" value="" required>
                                             <label for="ICA_no">NO</label>
                                         </div>
                                     </div>
