@@ -2,7 +2,7 @@
 /*------------------------------------------------------------------
  [Master Stylesheet]
 
-  Project:	Star Admin2
+  Project:	Star Admin2 
   Version:	1.2.1
 -------------------------------------------------------------------*/
 /*-------------------------------------------------------------------
@@ -9368,9 +9368,6 @@ progress {
 }
 
 @media (min-width: 576px) {
-  h4{
-    width: 700%;
-  }
   .col-sm {
     flex: 1 0 0%;
   }
@@ -9408,28 +9405,27 @@ progress {
   }
   .col-sm-1 {
     flex: 0 0 auto;
-    width: 13.33333333%;
+    width: 8.33333333%;
   }
   .col-sm-2 {
     flex: 0 0 auto;
-    width: 39.33333333%;
-    
+    width: 16.66666667%;
   }
   .col-sm-3 {
     flex: 0 0 auto;
-    width: 60%;
+    width: 25%;
   }
   .col-sm-4 {
     flex: 0 0 auto;
-  
+    width: 33.33333333%;
   }
   .col-sm-5 {
     flex: 0 0 auto;
-    width: 60%;
+    width: 41.66666667%;
   }
   .col-sm-6 {
     flex: 0 0 auto;
-    
+    width: 50%;
   }
   .col-sm-7 {
     flex: 0 0 auto;
@@ -9594,15 +9590,15 @@ progress {
   }
   .col-md-5 {
     flex: 0 0 auto;
-    width: 40%;
+    width: 41.66666667%;
   }
   .col-md-6 {
     flex: 0 0 auto;
-    width: 60%;
+    width: 50%;
   }
   .col-md-7 {
     flex: 0 0 auto;
-    width: 70;
+    width: 58.33333333%;
   }
   .col-md-8 {
     flex: 0 0 auto;
@@ -9747,7 +9743,7 @@ progress {
   }
   .col-lg-1 {
     flex: 0 0 auto;
-    width: 60%;
+    width: 8.33333333%;
   }
   .col-lg-2 {
     flex: 0 0 auto;
@@ -9759,7 +9755,7 @@ progress {
   }
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 40%;
+    width: 33.33333333%;
   }
   .col-lg-5 {
     flex: 0 0 auto;
@@ -9767,7 +9763,7 @@ progress {
   }
   .col-lg-6 {
     flex: 0 0 auto;
-    width: 80%;
+    width: 50%;
   }
   .col-lg-7 {
     flex: 0 0 auto;
@@ -9940,11 +9936,11 @@ progress {
   }
   .col-xl-7 {
     flex: 0 0 auto;
-    width: 39.9%;
+    width: 58.33333333%;
   }
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 57.777%;
+    width: 66.66666667%;
   }
   .col-xl-9 {
     flex: 0 0 auto;
@@ -30600,11 +30596,10 @@ div.tagsinput span.tag a {
 }
 .wizard > .content > .body {
   float: left;
-  /* position: absolute;
+  position: absolute;
   width: 95%;
-  height: 95%;*/
+  height: 95%;
   padding: 2.5%;
-  overflow: hidden;
 }
 .wizard > .content > .body ul {
   list-style: disc;
@@ -30798,9 +30793,6 @@ div.tagsinput span.tag a {
 }
 .auth .brand-logo img {
   width: 90px;
-  position: relative;
-  left: 40%;
-  
 }
 .auth form .form-group {
   margin-bottom: 1.5rem;
@@ -30982,16 +30974,14 @@ div.tagsinput span.tag a {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
-/*SIDER COLOR CONTINUO*/
-
 .sidebar .nav .nav-item.active > .nav-link {
-  color: #000000;
+  background: #FAEEDB;
+  position: relative;
 }
 .sidebar .nav .nav-item.active > .nav-link i,
 .sidebar .nav .nav-item.active > .nav-link .menu-title,
 .sidebar .nav .nav-item.active > .nav-link .menu-arrow {
-  color: #000000;
+  color: #1E1E2C;
 }
 .sidebar .nav:not(.sub-menu) {
   margin-top: 1.45rem;
@@ -31015,9 +31005,8 @@ div.tagsinput span.tag a {
   background: #FAEEDB;
   border-radius: 0.437rem 0.437rem 0 0;
 }
-/*HOVER MENU LATERAL*/
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
-  background: #bdb2b4;
+  background: #FAEEDB;
   color: #1E1E2C;
 }
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link:not([aria-expanded=true]) {
