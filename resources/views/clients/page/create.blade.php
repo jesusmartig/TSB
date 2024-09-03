@@ -4,6 +4,7 @@
 @endsection
 @section('content')
     <div class="row">
+        <h3>Crear Cliente</h3>
         <div class="col-sm-12">
             <div class="home-tab">
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
@@ -23,7 +24,7 @@
                                 <form class="form-sample" id="AddForm" name="AddForm">
                                     @csrf
                                     <div class="row pb-3">
-                                        <div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-6">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
                                             <label class="col-form-label" for="typePerson">Tipo de persona</label>
                                             <select class="form-select typePerson" name="typePerson" id="typePerson">
                                                 <option value="">Seleccione....</option>
@@ -32,26 +33,26 @@
                                                 <option value="EXTRANJERA">EXTRANJERA</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-6">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-6">
                                             <label for="typeDocument">Tipo documento</label>
                                             <select class="form-select typeDocument" name="typeDocument"
                                                     id="typeDocument" required>
                                                 <option value="">Seleccioné...</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
                                             <label for="numDocument">Documento</label>
                                             <input type="text" class="form-control numDocument" name="numDocument"
                                                    id="numDocument"
                                                    autocomplete="off" value="" required>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                             <label for="expeditionDate">Fecha de expedición</label>
                                             <input type="date" class="form-control expeditionDate"
                                                    name="expeditionDate"
                                                    id="expeditionDate" autocomplete="off" value="" required>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                             <label for="expeditionPlace">Lugar de expedición</label>
                                             <input type="text" class="form-control expeditionPlace"
                                                    name="expeditionPlace"
@@ -62,28 +63,28 @@
                                     <div class="row pb-3">
                                         
                                         
-                                        <div class="col-12 col-sm-4 col-md-9 col-lg-9 col-xl-12">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                             <label for="name">Nombre / Razón social</label>
                                             <input type="text" class="form-control name" name="name" id="name"
                                                    autocomplete="off" value="" required>
                                         </div>
                                     </div>
                                     <div class="row pb-3">
-                                        <div class="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
                                             <label for="departament">Departamento </label>
                                             <select class="form-select select2 department" name="department"
                                                     id="department" required>
                                                 <option value="">Seleccioné...</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
                                             <label for="city">Ciudad </label>
                                             <select class="form-select select2 city" name="ciId" id="city" required
                                             >
                                                 <option value="">Seleccioné...</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-4">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                                             <label for="address">Dirección</label>
                                             <input type="text" class="form-control address" name="address"
                                                    id="address"
@@ -91,7 +92,7 @@
                                         </div>
                                     </div>
                                     <div class="row pb-3">
-                                        <div class="col-12 col-sm-4 col-md-2 col-lg-4 col-xl-2">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
                                             <label for="gender">Sexo</label>
                                             <select class="form-select gender" name="gender"
                                                     id="gender" required>
@@ -100,13 +101,13 @@
                                                 <option value="F">FEMENINO</option>
                                             </select>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-5">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-5">
                                             <label for="email">E-mail </label>
                                             <input type="text" class="form-control email" name="email" id="email"
                                                    autocomplete="off"
                                                    value="" required>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-5">
+                                        <div class="col-12 col-sm-9 col-md-4 col-lg-4 col-xl-5">
                                             <label for="telephone">Teléfono</label>
                                             <input type="text" class="form-control telephone" name="telephone"
                                                    id="telephone"
@@ -117,14 +118,14 @@
                                     </div>
                                     <div class="row pb-3">
                                         
-                                        <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-6">
+                                        <div class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6">
                                             <label for="cellphone">Celular</label>
                                             <input type="text" class="form-control cellphone" name="cellphone"
                                                    id="cellphone"
                                                    autocomplete="off"
                                                    value="" required>
                                         </div>
-                                        <div class="col-12 col-sm-9 col-md-6 col-lg-1 col-xl-6">
+                                        <div class="col-12 col-sm-9 col-md-6 col-lg-6 col-xl-6">
                                             <label class="col-form-label" for="typeIVA">Tipo de regimen IVA</label>
                                             <select class="form-select typeIVA" name="typeIVA" id="tctypeIVA">
                                                 <option value="">Seleccione....</option>
@@ -132,7 +133,7 @@
                                                 <option value="IVA">Resposable de IVA </option>
                                             </select>
                                         </div>
-                                        <div >
+                                        <div class="col-12">
                                             <h4> Retiene ICA</h4>
                                             <input type="radio" class="ICA" name="ICA"
                                                    id="tcICA_si" value="" required>
@@ -141,9 +142,10 @@
                                                    id="tcICA_no" value="" required>
                                             <label for="ICA_no">NO</label>
                                         </div>
+                                        
                                     </div>
                                     <div class="row pb-3">
-                                        <div class="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-6">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-6">
                                             <label for="SharesDoc">Adjunte su documento de identificación</label>
                                             <input type="file" class="form-control SharesDoc" name="SharesDoc"
                                                    id="SharesDoc" value="" autocomplete="off" required>
@@ -152,7 +154,7 @@
                                             <input type="hidden" class="form-control dfSharesDoc" name="affShares[]"
                                                    id="dfShares" value="" autocomplete="off" required>
                                         </div>
-                                        <div class="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-6">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-6">
                                             <label for="SharesRut">Adjunte su RUT</label>
                                             <input type="file" class="form-control SharesRut" name="SharesRut"
                                                    id="SharesRut"

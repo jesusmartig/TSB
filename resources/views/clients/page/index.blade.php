@@ -78,10 +78,10 @@
                         data: "id",
                         render: function (data, type, row, meta) {
                             return type === "display" ?
-                                ` <a role="button" href="/dashboard/empresa-de-transporte/actualizar/${data}" class="btn btn-light">
+                                ` <a role="button" href="/dashboard/clientes/actualizar/${data}" class="btn btn-light">
                                                 <i class="far fa-edit"></i>
                                             </a>
-                                            <a role="button" href="/dashboard/empresa-de-transporte/perfil/${data}" class="btn btn-light">
+                                            <a role="button" href="/dashboard/clientes/perfil/${data}" class="btn btn-light">
                                                 <i class="far fa-eye"></i>
                                             </a> `
                                 : data;

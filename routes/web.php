@@ -55,6 +55,10 @@ Route::get('/dashboard/clientes/actualizar/{id}', function () {
     return view('clients.page.update');
 })->name('clients-update');
 
+Route::get('/dashboard/clientes/perfil/{id}', function () {
+    return view('clients.page.profile');
+})->name('clients-profile');
+
 Route::get('/404', function () {
     return view('errors.404');
 })->name('errors-404');
