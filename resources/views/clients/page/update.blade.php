@@ -37,7 +37,7 @@
                             @csrf
                             
                             <div class="row pb-3">
-                                <div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-6">
+                                <div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xl-6 agr">
                                     <label class="col-form-label" for="typePerson">Tipo de persona</label>
                                     <select class="form-select typePerson" name="typePerson" id="tctypePerson">
                                         <option value="">Seleccione....</option>

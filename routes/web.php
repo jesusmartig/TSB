@@ -83,85 +83,62 @@ Route::get('/dashboard/vehiculos/perfil/{id}', function () {
 
 /* ====================================================================================================================================================================== */
 Route::get('/dashboard/vehiculos/documentos/soat', function () {
-    return view('vehiclepapers.soat.index');
+    return view('vehiclepapers.soat.page.index');
 })->name('soat.index');
 Route::get('/dashboard/vehiculos/documentos/soat/crear', function () {
-    return view('vehiclepapers.soat.create');
+    return view('vehiclepapers.soat.page.create');
 })->name('soat.create');
 Route::get('/dashboard/vehiculos/documentos/soat/actualizar/{id}', function () {
-    return view('vehiclepapers.soat.update');
+    return view('vehiclepapers.soat.page.update');
 })->name('soat.update');
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* ====================================================================================================================================================================== */
 Route::get('/dashboard/vehiculos/documentos/polizas-de-responsabilidad-civil', function () {
-    return view('vehiclepapers.policies.index');
+    return view('vehiclepapers.policies.page.index');
 })->name('policies.index');
 Route::get('/dashboard/vehiculos/documentos/polizas-de-responsabilidad-civil/crear', function () {
-    return view('vehiclepapers.policies.create');
+    return view('vehiclepapers.policies.page.create');
 })->name('policies.create');
 Route::get('/dashboard/vehiculos/documentos/polizas-de-responsabilidad-civil/actualizar/{id}', function () {
-    return view('vehiclepapers.policies.update');
+    return view('vehiclepapers.policies.page.update');
 })->name('policies.update');
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* ====================================================================================================================================================================== */
 Route::get('/dashboard/vehiculos/documentos/certificado-de-revision-tecnico-mecanica', function () {
-    return view('vehiclepapers.rtm.index');
+    return view('vehiclepapers.rtm.page.index');
 })->name('rtm.index');
 Route::get('/dashboard/vehiculos/documentos/certificado-de-revision-tecnico-mecanica/crear', function () {
-    return view('vehiclepapers.rtm.create');
+    return view('vehiclepapers.rtm.page.create');
 })->name('rtm.create');
 Route::get('/dashboard/vehiculos/documentos/certificado-de-revision-tecnico-mecanica/actualizar/{id}', function () {
-    return view('vehiclepapers.rtm.update');
+    return view('vehiclepapers.rtm.page.update');
 })->name('rtm.update');
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
-Route::get('/api/dashboard/rtm', [MechanicaltechnicalreviewController::class, 'index'])->name('rtm.index');
-Route::post('/api/dashboard/rtm/store', [MechanicaltechnicalreviewController::class, 'store'])->name('rtm.store');
-Route::get('/api/dashboard/rtm/show/{id}', [MechanicaltechnicalreviewController::class, 'show'])->name('rtm.show');
-Route::put('/api/dashboard/rtm/update/{id}', [MechanicaltechnicalreviewController::class, 'update'])->name('rtm.update');
-Route::put('/api/dashboard/rtm/initiate/{id}', [MechanicaltechnicalreviewController::class, 'initiate'])->name('rtm.initiate');
-Route::delete('/api/dashboard/rtm/delete/{id}', [MechanicaltechnicalreviewController::class, 'destroy'])->name('rtm.destroy');
-/* ====================================================================================================================================================================== */
 
 /* ====================================================================================================================================================================== */
 Route::get('/dashboard/vehiculos/documentos/tarjeta-de-operacion', function () {
-    return view('vehiclepapers.operationcard.index');
+    return view('vehiclepapers.operationcard.page.index');
 })->name('operationcard.index');
 Route::get('/dashboard/vehiculos/documentos/tarjeta-de-operacion/crear', function () {
-    return view('vehiclepapers.operationcard.create');
+    return view('vehiclepapers.operationcard.page.create');
 })->name('operationcard.create');
 Route::get('/dashboard/vehiculos/documentos/tarjeta-de-operacion/actualizar/{id}', function () {
-    return view('vehiclepapers.operationcard.update');
+    return view('vehiclepapers.operationcard.page.update');
 })->name('operationcard.update');
 Route::get('/dashboard/vehiculos/documentos/tarjeta-de-operacion/perfil/{id}/{code}', function () {
-    return view('vehiclepapers.operationcard.profile');
+    return view('vehiclepapers.operationcard.page.profile');
 })->name('operationcard.profile');
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-Route::get('/api/dashboard/operationcard', [OperationcardController::class, 'index'])->name('operationcard.index');
-Route::post('/api/dashboard/operationcard/store', [OperationcardController::class, 'store'])->name('operationcard.store');
-Route::get('/api/dashboard/operationcard/show/{id}', [OperationcardController::class, 'show'])->name('operationcard.show');
-Route::put('/api/dashboard/operationcard/update/{id}', [OperationcardController::class, 'update'])->name('operationcard.update');
-Route::put('/api/dashboard/operationcard/initiate/{id}', [OperationcardController::class, 'initiate'])->name('operationcard.initiate');
-Route::delete('/api/dashboard/operationcard/delete/{id}', [OperationcardController::class, 'destroy'])->name('operationcard.destroy');
-/* ====================================================================================================================================================================== */
 
 /* ====================================================================================================================================================================== */
 Route::get('/dashboard/vehiculos/documentos/convenios', function () {
-    return view('vehiclepapers.covenant.index');
+    return view('vehiclepapers.covenant.page.index');
 })->name('covenant.index');
 Route::get('/dashboard/vehiculos/documentos/convenios/crear', function () {
-    return view('vehiclepapers.covenant.create');
+    return view('vehiclepapers.covenant.page.create');
 })->name('covenant.create');
 Route::get('/dashboard/vehiculos/documentos/convenios/actualizar/{id}', function () {
-    return view('vehiclepapers.covenant.update');
+    return view('vehiclepapers.covenant.page.update');
 })->name('covenant.update');
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-Route::get('/api/dashboard/conventions', [ConventionsController::class, 'index'])->name('conventions.index');
-Route::post('/api/dashboard/conventions/store', [ConventionsController::class, 'store'])->name('conventions.store');
-Route::get('/api/dashboard/conventions/show/{id}', [ConventionsController::class, 'show'])->name('conventions.show');
-Route::put('/api/dashboard/conventions/update/{id}', [ConventionsController::class, 'update'])->name('conventions.update');
-Route::delete('/api/dashboard/conventions/destroy/{id}', [ConventionsController::class, 'destroy'])->name('conventions.destroy');
-/* ====================================================================================================================================================================== */
 

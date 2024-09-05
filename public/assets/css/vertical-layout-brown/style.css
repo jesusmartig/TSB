@@ -9540,6 +9540,10 @@ progress {
   .col-md {
     flex: 1 0 0%;
   }
+  .agr{
+    top: -23px !important;
+    position: relative;
+  }
   .row-cols-md-auto > * {
     flex: 0 0 auto;
     width: auto;
@@ -9708,6 +9712,10 @@ progress {
 @media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
+  }
+  .agr{
+    top: -23px !important;
+    
   }
   .row-cols-lg-auto > * {
     flex: 0 0 auto;
@@ -9905,6 +9913,10 @@ progress {
   .row-cols-xl-6 > * {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  .agr{
+    top: -23px !important;
+    
   }
   .col-xl-auto {
     flex: 0 0 auto;

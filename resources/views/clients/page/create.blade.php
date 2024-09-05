@@ -24,7 +24,7 @@
                                 <form class="form-sample" id="AddForm" name="AddForm">
                                     @csrf
                                     <div class="row pb-3">
-                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-6">
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-6 agr">
                                             <label class="col-form-label" for="typePerson">Tipo de persona</label>
                                             <select class="form-select typePerson" name="typePerson" id="typePerson">
                                                 <option value="">Seleccione....</option>
@@ -133,16 +133,28 @@
                                                 <option value="IVA">Resposable de IVA </option>
                                             </select>
                                         </div>
-                                        <div class="col-12">
-                                            <h4> Retiene ICA</h4>
-                                            <input type="radio" class="ICA" name="ICA"
-                                                   id="tcICA_si" value="" required>
-                                            <label for="ICA_si">SI</label>
-                                            <input type="radio" class="ICA" name="ICA"
-                                                   id="tcICA_no" value="" required>
-                                            <label for="ICA_no">NO</label>
-                                        </div>
                                         
+                                    </div>
+                                    <div class="row pb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                            <label class="form-label">Retiene ICA </label>
+                                            <div class="selectgroup w-100">
+                                                <label class="selectgroup-item">
+                                                    <input type="radio" name="ICA"
+                                                           id="ICA" value="1"
+                                                           class="selectgroup-input">
+                                                    <span
+                                                        class="selectgroup-button">SI</span>
+                                                </label>
+                                                <label class="selectgroup-item">
+                                                    <input type="radio" name="ICA"
+                                                           id="ICA" value="2"
+                                                           class="selectgroup-input">
+                                                    <span class="selectgroup-button">NO</span>
+                                                </label>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="row pb-3">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-6">
