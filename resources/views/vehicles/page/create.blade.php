@@ -54,10 +54,8 @@
                             </a>
                         </li>
                     </ul>
-
                     <div class="tab-content b-0 mb-0">
                         <div class="tab-pane" id="basictab0">
-
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">

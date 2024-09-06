@@ -79,7 +79,7 @@
                                                 <div class="row pb-3">
                                                     <div class="col-12 col-sm-7 col-md-6 col-lg-1 col-xl-5">
                                                         <label class="col-form-label" for="typesSociety">Tipo de sociedad </label>
-                                                        <select class="form-select typesSociety" name="typesSociety" id="typesSociety">
+                                                        <select class="form-select typesSociety" name="typesSociety" id="tctypesSociety">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
@@ -91,13 +91,13 @@
                                                     </div>
                                                     <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-5">
                                                         <label class="col-form-label" for="department">Departamento </label>
-                                                        <select class="form-select department" name="department" id="department">
+                                                        <select class="form-select department" name="department" id="tcdepartment">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-12 col-sm-4 col-md-6 col-lg-1 col-xl-5">
                                                         <label class="col-form-label" for="city">Ciudad</label>
-                                                        <select class="form-select city" name="city" id="city">
+                                                        <select class="form-select city" name="city" id="tccity">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
@@ -134,7 +134,7 @@
                                                     <div class="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-6">
                                                         <label class="col-form-label" for="typeDocuments">Tipo de documento</label>
                                                         <select class="form-select typeDocuments" name="typeDocuments"
-                                                                id="typeDocuments">
+                                                                id="tctypeDocuments">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
@@ -155,7 +155,7 @@
                                                     <div class="ms-auto">
                                                         <a role="button"
                                                            class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
-                                                           href="/dashboard/empresa">
+                                                           href="/dashboard/empresa-de-transporte">
                                                             <i class="fad fa-times me-1"> </i> Cancelar
                                                         </a>
                                                         <button type="submit"
@@ -188,13 +188,13 @@
 
                                                     <div class="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-4">
                                                         <label class="col-form-label" for="department">Departamento </label>
-                                                        <select class="form-select department" name="department" id="department">
+                                                        <select class="form-select department" name="department" id="tcdepartment">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-4">
                                                         <label class="col-form-label" for="city">Ciudad</label>
-                                                        <select class="form-select city" name="city" id="city">
+                                                        <select class="form-select city" name="city" id="tccity">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
@@ -231,7 +231,7 @@
                                                   </div>
                                                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                                     <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
-                                                    <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                    <select class="form-select transportcompany" name="transportcompany" id="tctransportcompany">
                                                         <option value="">Seleccione....</option>
                                                     </select>
                                                 </div>
@@ -246,7 +246,7 @@
                                                     <div class="ms-auto">
                                                         <a role="button"
                                                            class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
-                                                           href="/dashboard/empresa">
+                                                           href="/dashboard/empresa-de-transporte">
                                                             <i class="fad fa-times me-1"> </i> Cancelar
                                                         </a>
                                                         <button type="submit"
@@ -270,13 +270,13 @@
                                                   <div class="row pb-3">
                                                       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                                           <label class="col-form-label" for="economicactivity">Actividad Economica </label>
-                                                          <select class="form-select economicactivity" name="economicactivity" id="economicactivity">
+                                                          <select class="form-select economicactivity" name="economicactivity" id="tceconomicactivity">
                                                               <option value="">Seleccione....</option>
                                                           </select>
                                                       </div>
                                                       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                                         <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
-                                                        <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                        <select class="form-select transportcompany" name="transportcompany" id="tctransportcompany">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                       </div>
@@ -291,7 +291,7 @@
                                                       <div class="ms-auto">
                                                           <a role="button"
                                                              class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
-                                                             href="/dashboard/empresa">
+                                                             href="/dashboard/empresa-de-transporte">
                                                               <i class="fad fa-times me-1"> </i> Cancelar
                                                           </a>
                                                           <button type="submit"
@@ -316,13 +316,13 @@
 
                                                     <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                                                         <label class="col-form-label" for="bank">Banco </label>
-                                                        <select class="form-select bank" name="bank" id="bank">
+                                                        <select class="form-select bank" name="bank" id="tcbank">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                                                         <label class="col-form-label" for="branch">Sucursal</label>
-                                                        <select class="form-select branch" name="branch" id="branch">
+                                                        <select class="form-select branch" name="branch" id="tcbranch">
                                                             <option value="">Seleccione....</option>
                                                         </select>
                                                     </div>
@@ -377,7 +377,7 @@
                                                     <div class="ms-auto">
                                                         <a role="button"
                                                            class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
-                                                           href="/dashboard/empresa">
+                                                           href="/dashboard/empresa-de-transporte">
                                                             <i class="fad fa-times me-1"> </i> Cancelar
                                                         </a>
                                                         <button type="submit"
@@ -394,11 +394,11 @@
                               <h3>Camara de Comercio</h3>
                               <section>
                                
-                                <div class="form-check">
-                                  <label class="form-check-label">
-                                    <input class="checkbox" type="checkbox">
-                                    I agree with the Terms and Conditions.
-                                  </label>
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-1 col-xl-4">
+                                    <label class="col-form-label" for="department">Departamento </label>
+                                    <select class="form-select department" name="department" id="department">
+                                        <option value="">Seleccione....</option>
+                                    </select>
                                 </div>
                               </section>
                               <h3>Experiencias</h3>
@@ -432,12 +432,12 @@
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
                                                         <label class="col-form-label" for="startday">Fecha de inicio</label>
-                                                        <input type="date" class="form-control startday" name="startday"
+                                                        <input type="date" class="form-control startday" name="tcstartday"
                                                         id="tcstartday" value="" autocomplete="off" required>
                                                     </div>
                                                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
                                                       <label class="col-form-label" for="endday">Fecha de finalizacion</label>
-                                                      <input type="date" class="form-control endday" name="endday"
+                                                      <input type="date" class="form-control endday" name="tcendday"
                                                       id="tcendday" value="" autocomplete="off" required>
                                                     </div>
                                                 </div>
@@ -452,7 +452,7 @@
 
                                                   <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                                     <label class="col-form-label" for="transportcompany">Empresa de transporte</label>
-                                                    <select class="form-select transportcompany" name="transportcompany" id="transportcompany">
+                                                    <select class="form-select transportcompany" name="transportcompany" id="tctransportcompany">
                                                         <option value="">Seleccione....</option>
                                                     </select>
                                                   </div>
@@ -470,7 +470,7 @@
                                                     <div class="ms-auto">
                                                         <a role="button"
                                                            class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
-                                                           href="/dashboard/empresa">
+                                                           href="/dashboard/empresa-de-transporte">
                                                             <i class="fad fa-times me-1"> </i> Cancelar
                                                         </a>
                                                         <button type="submit"
@@ -554,6 +554,98 @@
                                     </form>
                                 </div>
                               </section>
+                              <h3>Relaciones</h3>
+                              <section id="relacion">
+                                <div class="tab-content tab-content-basic" >
+                                    <form class="form-sample" id="AddForm" name="AddForm">
+                                        <div class="card mb-2">
+                                            <div class="card-body">
+                                                @csrf
+                                                <div class="row pb-3">
+
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                        <label class="col-form-label" for="nameRela">Nombre y Apellido </label>
+                                                        <input type="text" class="form-control nameRela" name="nameRela"
+                                                               id="tcnameRela" value="" autocomplete="off" required>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                        <label class="col-form-label" for="typePerson">Tipo de persona</label>
+                                                        <select class="form-select typePerson" name="typePerson" id="typePerson">
+                                                            <option value="">Seleccione....</option>
+                                                            <option value="NACIONAL - NATURAL">NACIONAL - NATURAL</option>
+                                                            <option value="NACIONAL - JURÍDICA">NACIONAL - JURÍDICA
+                                                            </option>
+                                                            <option value="EXTRANJERA">EXTRANJERA</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                        <label class="col-form-label" for="typeDocuments">Tipo de documento</label>
+                                                        <select class="form-select typeDocuments" name="typeDocuments"
+                                                                id="tctypeDocuments">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                        <label class="col-form-label" for="documents">Documento</label>
+                                                        <input type="number" class="form-control documents" name="documents"
+                                                               id="tcdocuments" value="" autocomplete="off" required>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                                        <label class="col-form-label" for="typeRelation">Tipo de Relación</label>
+                                                        <select class="form-select typeRelation" name="typeRelation" id="tctypeRelation">
+                                                            <option value="">Seleccione....</option>
+                                                            <option value="1">Accionista</option>
+                                                            <option value="2">Junta directiva</option>
+                                                            <option value="3">Revisor fiscal</option>
+                                                            <option value="4">Beneficiario compañía</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="divPorParticipacion" style="display: none;">
+                                                        <label class="col-form-label" for="porParticipacion">Porcentaje de participación</label>
+                                                        <input type="number" class="form-control porParticipacion" name="porParticipacion"
+                                                               id="tcporParticipacion" value="" autocomplete="off" required>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="divCharges" style="display: none;">
+                                                        <label class="col-form-label" for="charges">Cargo</label>
+                                                        <input type="text" class="form-control charges" name="charges"
+                                                               id="tccharges" value="" autocomplete="off" required>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" id="divCountry" style="display: none;">
+                                                        <label class="col-form-label" for="country">Nacionalidad</label>
+                                                        <select class="form-select country" name="country" id="tccountry">
+                                                            <option value="">Seleccione....</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="text-xl-end mt-xl-0 mt-1">
+                                                    <div class="ms-auto">
+                                                        <a role="button"
+                                                           class="btn btn-sm btn-primary text-white btn-tool primary-color rounded-pill float-right rounded-pill"
+                                                           href="/dashboard/empresa-de-transporte">
+                                                            <i class="fad fa-times me-1"> </i> Cancelar
+                                                        </a>
+                                                        <button type="submit"
+                                                                class="btn btn-sm btn-success text-white btn-tool succ-coloress rounded-pill float-right rounded-pill">
+                                                            <i class="fad fa-check me-1"></i> Guardar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                              </section>
                             </div>
                           </form>
                         </div>
@@ -588,6 +680,27 @@
                 });
             })
         });
+        /* Obtenemos el listado de las relacones */
+       
+        document.getElementById('tctypeRelation').addEventListener('change', function() {
+            
+            document.getElementById('divPorParticipacion').style.display = 'none';
+            document.getElementById('divCharges').style.display = 'none';
+            document.getElementById('divCountry').style.display = 'none';
+
+            const SelectedOption = this.value;
+
+            if (SelectedOption === '1') {
+                document.getElementById('divPorParticipacion').style.display = 'block';
+                document.getElementById('divCountry').style.display = 'block';
+            } else if (SelectedOption === '2' || SelectedOption === '3') {
+                document.getElementById('divCharges').style.display = 'block';
+                document.getElementById('divCountry').style.display = 'block';
+            } else if (SelectedOption === '4') {
+                document.getElementById('divCountry').style.display = 'block';
+            }
+        });
+
 
         /* Obtenemos el listado de los tipos de sociedad */
         requestService.Index(`/api/helpers/types-society`).then(function (data) {
